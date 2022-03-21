@@ -1,0 +1,6 @@
+﻿Chamados Abertos Base Multipla = CALCULATE(
+    COUNTROWS('Helpdesk'),
+    Helpdesk[Status do Chamado]="Abertura de Chamado" ||
+    Helpdesk[Status do Chamado]="Encerrado pelo Polichat" ||
+    Helpdesk[Status do Chamado]="Informação")
+    
